@@ -25,9 +25,21 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
         cardDiv.appendChild(headlineDiv);
 
         //   <div class="author">
+        const authorDiv = document.createElement('div');
+        authorDiv.classList.add('author');
+        cardDiv.appendChild(authorDiv);
+
         //     <div class="img-container">
+        const authorImgDiv = document.createElement('div');
+        authorImgDiv.classList.add('img-container');
+        authorDiv.appendChild(authorImgDiv);
+
         //       <img src={url of authors image} />
+        const authorImg = document.createElement('img');
+        authorImg.src = indexpass.authorPhoto;
+        authorImgDiv.appendChild(authorImg);
         //     </div>
+
         //     <span>By {authors name}</span>
         //   </div>
         // </div>
