@@ -41,6 +41,11 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
         //     </div>
 
         //     <span>By {authors name}</span>
+        const authSpan = document.createElement('span');
+        authSpan.textContent = indexpass.authorName;
+        cardDiv.appendChild(authSpan);
+
+
         //   </div>
         // </div>
 
